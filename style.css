@@ -270,8 +270,6 @@ a img
 /* This is used on tables that should just have a border around them. */
 .tborder
 {
-	/*padding: 1px;
-	border: 1px solid #696969;*/
 	background-color: #FFFFFF;
 }
 
@@ -373,19 +371,19 @@ a img
 
 .maintab_back a:hover, .maintab_active_back a:hover
 {
-	color: #e0e0ff;
+	color: #000000;
 	text-decoration: none;
 }
 /* definitions for the mirror tab */
 .mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
 {
-	color: white;
+	color: #000000;
 	text-transform: uppercase;
 	vertical-align: top;
 }
 .mirrortab_back, .mirrortab_active_back
 {
-	color: white;
+	color: #000000;
 	text-decoration: none;
 	font-size: 9px;
 	vertical-align: bottom;
@@ -425,13 +423,13 @@ a img
 /* how links behave in mirror tab. */
 .mirrortab_back a:link , .mirrortab_back a:visited, .mirrortab_active_back a:link , .mirrortab_active_back a:visited
 {
-	color: white;
+	color: #dd4b21;
 	text-decoration: none;
 }
 
 .mirrortab_back a:hover, .mirrortab_active_back a:hover
 {
-	color: #e0e0ff;
+	color: #000000;
 	text-decoration: none;
 }
 

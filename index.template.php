@@ -231,7 +231,7 @@ function template_main_above()
 	echo '
 							<td colspan="2" width="100%" valign="top" class="windowbg2">
                             <img src="', $settings['images_url'], '/cplp.png" style="float:right; padding-right:80px; padding-bottom:6px;" /> <br />
-							<span class="middletext">';
+							<span class="middletext"">';
  
 	// If the user is logged in, display stuff like their name, new messages, etc.
 	if ($context['user']['is_logged'])
