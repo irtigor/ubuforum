@@ -1,3 +1,9 @@
-Tema smf.
+Tema SMF.
 
-Mais info: http://ubuntuforum-br.org/index.php/topic,74188.msg414117.html#new
+Como instalar: é necessário ter um servidor web (apache, por ex), PHP 4.1.0 ou superior e um SGDB (MySQL >= 3.23.28, PostgreSQL >= 7.4.10 ou SQLite >= 1.0). Instale o SMF, disponível em: http://download.simplemachines.org/ (siga as instruções de lá), pra completar baixe esse tema, exemplo:
+
+git clone git://github.com/irtigor/ubuforum.git caminho/até/a/pasta/desejada*
+
+*Sugiro a pasta Themes do SMF, dentro do seu servidor web (fora de produção! Teste!).
+
+Mais info: http://ubuntuforum-br.org/index.php/topic,74188.msg414117.html
