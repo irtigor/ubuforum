@@ -229,9 +229,9 @@ function template_main_above()
 							<td class="windowbg" valign="middle">', $context['user']['avatar']['image'], '</td>';
 
 	echo '
-							<td colspan="2" width="100%" valign="top" class="windowbg2">
+							<td colspan="2" width="100%" valign="top">
                             <img src="', $settings['images_url'], '/cplp.png" style="float:right; padding-right:80px; padding-bottom:6px;" /> <br />
-							<span class="middletext"">';
+							<span class="middletext">';
  
 	// If the user is logged in, display stuff like their name, new messages, etc.
 	if ($context['user']['is_logged'])
@@ -603,9 +603,28 @@ function template_menu()
 	// The end of tab section.
 	echo '
 				<td class="maintab_' , $last , '">&nbsp;</td>
+				<td align="right" nowrap="nowrap" valign="top">
+					<form action="', $scripturl, '?action=search2" method="post" accept-charset="', $context['character_set'], '" style="margin: 0;">
+						<a href="', $scripturl, '?action=search;advanced"><img src="'.$settings['images_url'].'/filter.gif" align="middle" style="margin: 0 1ex;" alt="" /></a>
+						<input type="text" name="search" value="" style="width: 190px;" />&nbsp;
+						<input type="submit" name="submit" value="', $txt[182], '" style="width: 11ex;" />
+						<input type="hidden" name="advanced" value="0" />';
+
+	// Search within current topic?
+	if (!empty($context['current_topic']))
+		echo '
+						<input type="hidden" name="topic" value="', $context['current_topic'], '" />';
+
+		// If we're on a certain board, limit it to this board ;).
+	elseif (!empty($context['current_board']))
+		echo '
+						<input type="hidden" name="brd[', $context['current_board'], ']" value="', $context['current_board'], '" />';
+
+	echo '
+					</form>
+				</td>
 			</tr>
 		</table>';
-
 }
 
 // Generate a strip of buttons.

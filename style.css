@@ -163,13 +163,18 @@ a img
 /* Highlighted text - such as search results. */
 .highlight
 {
-	background-color: yellow;
 	font-weight: bold;
 	color: black;
+	border: 1px dashed;
 }
 
 /* Alternating backgrounds for posts, and several other sections of the forum. */
-.windowbg, .windowbg2, #preview_body
+.windowbg2
+{
+	color: #000000;
+	background-color: #ffffff;
+}
+.windowbg, #preview_body
 {
 	color: #000000;
 	background-color: #f7f7f7;
