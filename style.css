@@ -321,7 +321,10 @@ a img
 	color: red;
 }
 
-
+.fixed_width
+{
+	width:100px;
+}
 /* definitions for the main tab, active means the tab reflects which page is displayed */
 .maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last
 {
@@ -334,7 +337,7 @@ a img
 	color: white;
 	text-decoration: none;
 	font-size:  9px;
-	vertical-align: top;
+	vertical-align: bottom;
 	padding: 2px 6px 6px 6px;
 	font-family: tahoma, sans-serif;
 }

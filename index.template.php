@@ -603,7 +603,9 @@ function template_menu()
 	// The end of tab section.
 	echo '
 				<td class="maintab_' , $last , '">&nbsp;</td>
-				<td align="right" nowrap="nowrap" valign="top">
+				<td width="10px">&nbsp;</td>
+				<td class="maintab_first">&nbsp;</td>
+				<td class="maintab_back" width="20%" nowrap="nowrap" valign="top">
 					<form action="', $scripturl, '?action=search2" method="post" accept-charset="', $context['character_set'], '" style="margin: 0;">
 						<a href="', $scripturl, '?action=search;advanced"><img src="'.$settings['images_url'].'/filter.gif" align="middle" style="margin: 0 1ex;" alt="" /></a>
 						<input type="text" name="search" value="" style="width: 190px;" />&nbsp;
@@ -623,6 +625,8 @@ function template_menu()
 	echo '
 					</form>
 				</td>
+				<td class="maintab_last">&nbsp;</td>
+				<td width="12px">&nbsp;</td>
 			</tr>
 		</table>';
 }
